@@ -37,7 +37,7 @@
         
     </section>
     <section>
-    <h3>Which location did the incident occur?</h3>
+    <h3>Which location did the incident occur? </h3>
         <asp:DropDownList runat="server" ID="DropDownList1">
         <asp:ListItem Text="North" Value="north"></asp:ListItem>
         <asp:ListItem Text="Central" Value="central"></asp:ListItem>
