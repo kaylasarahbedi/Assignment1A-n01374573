@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Hotel Toronto Incident Report</title>
+</head>
+<body>
+    <section>
+        <h1>Hotel Toronto Incident Report</h1>
+        <div>
+            <p> Thank you for choosing <strong>Hotel Toronto</strong> for your stay. We are deeply sorry for the incident(s) that happened during your stay. Please fill out the following to help <strong>Hotel Toronto</strong> understand the situation.</p>
+        </div>
+    </section>
+
+    <form method="POST" action="https://postman-echo.com/post">
+        <section>
+            <div>
+
+                <label>What is your first name?</label>
+                <input type="text" id="customer_firstname" name="customer_firstname" />
+            </div>
+            <div>
+                <label>What is your last name?</label>
+                <input type="text" id="customer_lastname" name="customer_lastname" />
+            </div>
+        </section>
+
+        <section>
+            <H3>What type of incident are you reporting?</H3>
+            <div>
+                <input type="radio" id="incident_option_1" name="incident_option" value="LostItem" /> <label for="incident_option_1"> Injury </label>
+            </div>
+            <div>
+                <input type="radio" id="incident_option_2" name="incident_option" value="Injury" /> <label for="incident_option_2"> Injury </label>
+            </div>
+            <div>
+                <input type="radio" id="incident_option_3" name="incident_option" value="observation" /> <label for="incident_option_3"> Observation </label>
+            </div>
+            <div>
+                <input type="radio" id="incident_option_4" name="incident_option" value="service" /> <label for="incident_option_4"> Service </label>
+            </div>
+
+        </section>
+        <section>
+            <h3>Which location did the incident occur?</h3>
+            <select id="incident_location" name="incident_location">
+                <option value="north">North</option>
+                <option value="central">Central</option>
+                <option value="south">South</option>
+            </select>
+        </section>
+        <section>
+            <h3>Who has been notified of the incident?</h3>
+            <div>
+                <input type="checkbox" id="person_notified_1" name="person_notified_1" value="employee" /> <label for="person_notified_1"> Employee </label>
+            </div>
+            <div>
+                <input type="checkbox" id="person_notified_2" name="person_notified_2" value="police" /> <label for="person_notified_2"> Police </label>
+            </div>
+            <div>
+                <input type="checkbox" id="person_notified_3" name="person_notified_3" value="other" /> <label for="person_notified_3"> Other </label>
+            </div>
+        </section>
+        <section>
+            <input type="submit" value="submit" />
+        </section>
+    </form>
+</body>
+</html>
